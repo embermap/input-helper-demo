@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'input-helper',
+    podModulePrefix: 'input-helper/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',

@@ -1,0 +1,27 @@
+<div class="max-w-sm mx-auto mt-8 p-8 shadow-md border-t-8 border-teal-dark">
+  <div class="text-lg">
+
+    <p class='text-2xl font-thin mt-4 mb-12 text-center text-black'>
+      Create your free account!
+    </p>
+
+    <div class="px-2">
+      {{input value=model.name
+        placeholder='Full name'
+        class='inline-block w-full bg-grey-lighter rounded p-3'}}
+    </div>
+
+    <div class="mt-2 px-2">
+      <input value={{model.formattedSsn}}
+        oninput={{action 'updateSsn'}}
+        placeholder='Social security number 🕵'
+        class='inline-block w-full bg-grey-lighter rounded p-3'>
+    </div>
+
+    <div class='mt-4 mx-2 mb-4'>
+      <button class='w-full block bg-teal-dark hover:bg-teal-darker text-white rounded mx-auto w-1/2 px-3 py-4 font-semibold uppercase text-sm'>
+        Create account
+      </button>
+    </div>
+  </div>
+</div>
