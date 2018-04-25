@@ -5,7 +5,7 @@ export default Route.extend({
   model() {
     return this.get('store').createRecord('user', {
       name: '',
-      ssn: ''
+      ssn: '123456789'
     });
   }
 
