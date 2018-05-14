@@ -6,6 +6,7 @@ export default Controller.extend({
     updateSsn(event) {
       let user = this.get('model');
       let value = event.target.value;
+      console.log(event.target.value);
       let newSsn = value.replace(/-/g, '');
 
       if (newSsn.length <= 9) {
