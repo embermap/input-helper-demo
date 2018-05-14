@@ -5,14 +5,16 @@
       Create your free account!
     </p>
 
+    {{model.name}}
     <div class="px-2">
       {{input value=model.name
         placeholder='Full name'
         class='inline-block w-full bg-grey-lighter rounded p-3'}}
     </div>
 
+    {{model.ssn}}
     <div class="mt-2 px-2">
-      <input value={{model.formattedSsn}}
+      <input value={{model.ssn}}
         oninput={{action 'updateSsn'}}
         placeholder='Social security number 🕵'
         class='inline-block w-full bg-grey-lighter rounded p-3'>
